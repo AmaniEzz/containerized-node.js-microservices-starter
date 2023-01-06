@@ -1,7 +1,7 @@
 # Containerized Node.js Microservices Starter Template With Nginx as a Reverse Proxy.
 Starter template for developing Node.js Microservices with Docker for containerizing and Nginx as a reverse proxy to route user requests to the appropriate server.
 
-# Usage
+# Setup
 
 1. Clone the repo
 2. Install node, docker and docker compose on the system.
@@ -9,7 +9,7 @@ Starter template for developing Node.js Microservices with Docker for containeri
 4. Run ```docker compose up --build -d``` to build the docker images.
 5. Run ```docker-compose up``` to start the container.
 
-# Test it
+# Usage
 
 - Go to ```http://localhost/users``` you should see the following respone
 
