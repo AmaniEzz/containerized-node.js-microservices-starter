@@ -1,4 +1,4 @@
-# Docker Containerized Node.js Microservices Starter Template With Nginx as a Reverse Proxy.
+# Containerized Node.js Microservices Starter Template With Nginx as a Reverse Proxy.
 Starter template for developing Node.js Microservices with Docker for containerizing and Nginx as a reverse proxy to route user requests to the appropriate server.
 
 # Usage
