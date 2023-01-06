@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  mongo:
+    container_name: mongodb_container
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - "./mongo/db:/data/db"
+
+  nginx:
+    build: ./nginx
+    container_name: nginx_proxy
+    depends_on:
+      - store
+      - users
+    ports:
+      - "80:80"
+
+  store:
+    build: ./store
+    container_name: store_service_container
+    depends_on:
+      - "mongo"
+    volumes:
+      - "./store:/src/app"
+    working_dir: "/src/app"
+    ports:
+      - "3002:3002"
+
+  users:
+    build: ./users
+    container_name: users_service_container
+    depends_on:
+      - "mongo"
+    volumes:
+      - "./users:/src/app"
+    working_dir: "/src/app"
+    ports:
+      - "3003:3003"
