@@ -4,8 +4,8 @@ Starter template for developing Node.js Microservices with Docker for containeri
 # Setup
 
 1. Clone the repo
-2. Install node, docker and docker compose on the system.
-3. Run npm install to install dependencies in both ```/users``` and ```/store``` folders.
+2. Install node, docker and docker compose on your system.
+3. Run ```npm install``` to install dependencies in both ```/users``` and ```/store``` folders.
 4. Run ```docker compose up --build -d``` to build the docker images.
 5. Run ```docker-compose up``` to start the container.
 
